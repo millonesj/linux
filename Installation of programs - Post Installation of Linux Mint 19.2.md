@@ -40,8 +40,8 @@ sudo apt-get install -y docker.io docker-compose gnupg-agent software-properties
 sudo groupadd docker && sudo usermod -aG docker $USER \ 
 sudo usermod -aG docker $USER \ 
 
-sudo apt install python3-pip \ 
-sudo apt install python-pip \ 
+sudo apt install -y python3-pip \ 
+sudo apt install -y python-pip \ 
 
 sudo snap install slack --classic \ 
 sudo snap install tusk \ 
