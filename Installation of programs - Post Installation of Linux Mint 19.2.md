@@ -43,4 +43,10 @@ sudo apt -y autoclean \
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh \
 chsh -s `which zsh` \
 
+
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce \ 
+sudo apt-get update \ 
+sudo apt-get install dbeaver-ce \ 
+
+
 ```
