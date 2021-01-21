@@ -45,8 +45,9 @@ sudo usermod -aG docker $USER
 
 sudo apt install -y python3-pip 
 sudo apt install -y python-pip 
-sudo apt install -y youtube-dl 
 sudo apt install -y rofi 
+
+pip3 install youtube-dl 
 
 # INSTALL APPS WITH SNAP
 sudo snap install slack --classic 
