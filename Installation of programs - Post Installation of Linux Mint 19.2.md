@@ -38,8 +38,10 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ 
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list' 
 
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce 
+
 sudo apt-get update 
-sudo apt-get install -y docker.io docker-compose gnupg-agent software-properties-common code clementine git git-core snapd zsh vim tilix filezilla htop ttf-mscorefonts-installer flameshot 
+sudo apt-get install -y docker.io docker-compose gnupg-agent software-properties-common code clementine git git-core snapd zsh vim tilix filezilla htop ttf-mscorefonts-installer flameshot dbeaver-ce 
 sudo groupadd docker && sudo usermod -aG docker $USER 
 sudo usermod -aG docker $USER 
 
@@ -53,7 +55,6 @@ pip3 install youtube-dl
 sudo snap install slack --classic 
 sudo snap install tusk 
 sudo snap install notion-snap 
-sudo snap install dbeaver-ce 
 
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add - \
 source /etc/os-release \ 
