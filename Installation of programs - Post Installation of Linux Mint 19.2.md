@@ -63,7 +63,13 @@ sudo apt update
 sudo apt install -y brave-browser 
 
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh 
-chsh -s `which zsh` 
+chsh -s `which zsh`
+
+# INSTALL KUBECTL
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.0/bin/linux/amd64/kubectl 
+chmod +x ./kubectl 
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version --client 
 
 sudo apt -y autoremove 
 sudo apt -y autoclean 
