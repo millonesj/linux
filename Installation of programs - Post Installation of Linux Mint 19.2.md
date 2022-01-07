@@ -77,9 +77,13 @@ chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind 
 
 # INSTALL MINIKUBE 
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
+C
 sudo install minikube-linux-amd64 /usr/local/bin/minikube 
 
+
+# INSTALL STERN
+curl -LO https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
+sudo install stern_linux_amd64 /usr/local/bin/stern
 
 sudo apt -y autoremove 
 sudo apt -y autoclean 
