@@ -50,6 +50,7 @@ sudo apt install -y python-pip
 sudo apt install -y rofi 
 
 pip3 install youtube-dl 
+python3 -m pip install localstack 
 
 # INSTALL APPS WITH SNAP
 sudo snap install slack --classic 
