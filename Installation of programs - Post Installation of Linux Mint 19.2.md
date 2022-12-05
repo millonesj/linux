@@ -91,6 +91,9 @@ curl -L https://github.com/kubernetes/kompose/releases/download/v1.25.0/kompose-
 chmod +x kompose 
 sudo mv ./kompose /usr/local/bin/kompose 
 
+# INSTALL NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
 sudo apt -y autoremove 
 sudo apt -y autoclean 
 
