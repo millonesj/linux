@@ -94,6 +94,10 @@ sudo mv ./kompose /usr/local/bin/kompose
 # INSTALL NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
+# INSTALL YARN
+sudo apt-get install yarn
+export PATH="$PATH:$(yarn global bin)"
+
 sudo apt -y autoremove 
 sudo apt -y autoclean 
 
