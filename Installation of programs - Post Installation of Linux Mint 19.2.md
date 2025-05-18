@@ -42,7 +42,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo add-apt-repository ppa:serge-rider/dbeaver-ce 
 
 sudo apt-get update 
-sudo apt-get install -y docker.io docker-compose gnupg-agent software-properties-common code clementine git git-core snapd zsh vim tilix filezilla htop ttf-mscorefonts-installer flameshot dbeaver-ce vlc 
+sudo apt-get install -y tlp tlp-rdw docker.io docker-compose gnupg-agent software-properties-common code clementine git git-core snapd zsh vim tilix filezilla htop ttf-mscorefonts-installer flameshot dbeaver-ce vlc 
 sudo groupadd docker && sudo usermod -aG docker $USER 
 sudo usermod -aG docker $USER 
 
